@@ -1,0 +1,124 @@
+// Sync stubs for boundary functions
+module kernel {
+rpc int  _printk( char [in] *fmt ) {
+}
+rpc char*  edac_get_owner(  ) {
+}
+rpc int  edac_mc_add_mc_with_groups( projection mem_ctl_info [in] *mci, projection attribute_group [in] **groups ) {
+	projection < struct mem_ctl_info > mem_ctl_info {
+		u64 [in] mtype_cap;
+		u64 [in] edac_ctl_cap;
+		u64 [in] edac_cap;
+		int [in] mc_idx;
+		unsigned int [in] tot_dimms;
+		projection mem_ctl_info_dimm_info** dimms;
+		projection mem_ctl_info_device* pdev;
+		char* [in] mod_name;
+		char* [in] ctl_name;
+		char* [in] dev_name;
+		void* [in] pvt_info;
+	}
+	projection < struct dimm_info > mem_ctl_info_dimm_info {
+	}
+	projection < struct device > mem_ctl_info_device {
+	}
+	projection < struct attribute_group > attribute_group {
+	}
+}
+rpc projection ret_mem_ctl_info*  edac_mc_alloc( unsigned int  mc_num, unsigned int  n_layers, projection edac_mc_layer [in] *layers, unsigned int  sz_pvt ) {
+	projection < struct mem_ctl_info > ret_mem_ctl_info {
+		int  mc_idx;
+		unsigned int  n_layers;
+		projection mem_ctl_info_edac_mc_layer* layers;
+		unsigned int  tot_dimms;
+		projection mem_ctl_info_dimm_info** dimms;
+		void*  pvt_info;
+	}
+	projection < struct edac_mc_layer > ret_mem_ctl_info_edac_mc_layer {
+	}
+	projection < struct dimm_info > ret_mem_ctl_info_dimm_info {
+	}
+	projection < struct edac_mc_layer > edac_mc_layer {
+	}
+}
+rpc projection ret_mem_ctl_info*  edac_mc_del_mc( projection device [in] *dev ) {
+	projection < struct mem_ctl_info > ret_mem_ctl_info {
+		int  mc_idx;
+		char*  mod_name;
+		char*  ctl_name;
+		char*  dev_name;
+	}
+	projection < struct device > device {
+	}
+}
+rpc void  edac_mc_free( projection mem_ctl_info [in] *mci ) {
+	projection < struct mem_ctl_info > mem_ctl_info {
+	}
+}
+rpc void  edac_mc_handle_error( unsigned int  type, projection mem_ctl_info [in] *mci, unsigned short  error_count, u64  page_frame_number, u64  offset_in_page, u64  syndrome, int  top_layer, int  mid_layer, int  low_layer, char [in,out] *msg, char [in,out] *other_detail ) {
+	projection < struct mem_ctl_info > mem_ctl_info {
+		int [in] mc_idx;
+		unsigned int [in] n_layers;
+		projection mem_ctl_info_edac_mc_layer* layers;
+		unsigned int [in] tot_dimms;
+		projection mem_ctl_info_dimm_info** dimms;
+	}
+	projection < struct edac_mc_layer > mem_ctl_info_edac_mc_layer {
+	}
+	projection < struct dimm_info > mem_ctl_info_dimm_info {
+	}
+}
+rpc char*  kasprintf( unsigned int [in] gfp, char [in] *fmt ) {
+}
+rpc void  kfree(  ) {
+}
+rpc void  mce_register_decode_chain( projection _global_notifier_block [in] nb ) {
+}
+rpc void  mce_unregister_decode_chain( projection _global_notifier_block [in] nb ) {
+}
+rpc projection ret_pci_dev*  pci_dev_get( projection pci_dev [in] *dev ) {
+	projection < struct pci_dev > ret_pci_dev {
+	}
+	projection < struct pci_dev > pci_dev {
+	}
+}
+rpc void  pci_dev_put( projection pci_dev [in] *dev ) {
+	projection < struct pci_dev > pci_dev {
+	}
+}
+rpc int  pci_enable_device( projection pci_dev [in] *dev ) {
+	projection < struct pci_dev > pci_dev {
+		projection pci_dev_pci_bus* bus;
+		unsigned int [in] devfn;
+	}
+	projection < struct pci_bus > pci_dev_pci_bus {
+	}
+}
+rpc projection ret_pci_dev*  pci_get_device( unsigned int [in] vendor, unsigned int [in] device, projection pci_dev [in] *from ) {
+	projection < struct pci_dev > ret_pci_dev {
+	}
+	projection < struct pci_dev > pci_dev {
+	}
+}
+rpc int  pci_read_config_dword( projection pci_dev [in] *dev, int [in] where, unsigned int [in,out] *val ) {
+	projection < struct pci_dev > pci_dev {
+		projection pci_dev_pci_bus* bus;
+		unsigned int [in] devfn;
+	}
+	projection < struct pci_bus > pci_dev_pci_bus {
+	}
+}
+rpc projection ret_x86_cpu_id*  x86_match_cpu( projection x86_cpu_id [in] *match ) {
+	projection < struct x86_cpu_id > ret_x86_cpu_id {
+	}
+	projection < struct x86_cpu_id > x86_cpu_id {
+	}
+}
+rpc_ptr int  sbridge_mce_check_error( projection _global_notifier_block [unused] nb, u64 [unused] val, void  *data ) {
+}
+projection < struct notifier_block > _global_notifier_block {
+	rpc_ptr sbridge_mce_check_error notifier_call;
+}
+
+
+}

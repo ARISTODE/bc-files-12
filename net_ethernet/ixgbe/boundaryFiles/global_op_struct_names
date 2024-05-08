@@ -1,0 +1,10 @@
+dev_pm_ops
+ethtool_ops
+file_operations
+ixgbe_info
+ixgbe_link_operations
+ixgbe_phy_operations
+net_device_ops
+pci_driver
+pci_error_handlers
+udp_tunnel_nic_info

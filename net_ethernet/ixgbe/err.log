@@ -1,0 +1,69 @@
+WARNING: You're attempting to print out a bitcode file.
+This is inadvisable as it may cause display problems. If
+you REALLY want to taste LLVM bitcode first-hand, you
+can force output with the `-f' option.
+
+Unable to open file!
+Start building PDG
+func size: 10880
+PDG Node size: 697460
+Shared Fields Classification:
+----------------------------
+Function Pointer Number: 8
+Data Corruption Function Pointer Number: 0
+Data Leakage Function Pointer Number: 0
+Data Pointer Number: 20
+Data Corruption Data Pointer Number: 0
+Data Leakage Data Pointer Number: 0
+----------------------------
+number of shared fields: 224
+Shared fields computation finished
+[CIV Analysis]: propagating taints
+[CIV Analysis]: classifying risky data using type
+[CIV Analysis]: classifying risky data for boundary params
+----- Risky data dist: ------ 
+total: 7
+	NUM_ARITH: 25
+	ARR_IDX: 19
+	: 10
+	PTR_READ: 9
+	RISKY_KERNEL_FUNC: 48
+	CONTROL_VAR: 157
+	OTHER: 1528
+[CIV Analysis]: classifying risky data for drv callbacks
+found exclude func netdev_warn
+found exclude func kasprintf
+found exclude func netdev_info
+found exclude func netdev_err
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 3864.6565 seconds (3883.5046 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+  2079.6647 ( 54.2%)  25.0751 ( 93.5%)  2104.7398 ( 54.5%)  2109.9053 ( 54.3%)  Data Dependency Graph
+  1503.0839 ( 39.2%)   1.5238 (  5.7%)  1504.6077 ( 38.9%)  1508.0112 ( 38.8%)  Program Dependency Graph
+  170.9161 (  4.5%)   0.0129 (  0.0%)  170.9290 (  4.4%)  172.3651 (  4.4%)  Shared Data Analysis
+  39.7054 (  1.0%)   0.0723 (  0.3%)  39.7777 (  1.0%)  46.8684 (  1.2%)  Risky Field Analysis
+  39.1800 (  1.0%)   0.1158 (  0.4%)  39.2957 (  1.0%)  39.9367 (  1.0%)  Risky Boundary API Analysis
+   4.6841 (  0.1%)   0.0040 (  0.0%)   4.6881 (  0.1%)   5.5323 (  0.1%)  Analyze attacks relate to lock abusing
+   0.3379 (  0.0%)   0.0149 (  0.1%)   0.3528 (  0.0%)   0.5361 (  0.0%)  Module Verifier
+   0.1164 (  0.0%)   0.0001 (  0.0%)   0.1165 (  0.0%)   0.1857 (  0.0%)  Control Dependency Graph
+   0.0644 (  0.0%)   0.0004 (  0.0%)   0.0647 (  0.0%)   0.0671 (  0.0%)  Dominator Tree Construction
+   0.0152 (  0.0%)   0.0000 (  0.0%)   0.0153 (  0.0%)   0.0273 (  0.0%)  Compute control dependency graphs
+   0.0269 (  0.0%)   0.0001 (  0.0%)   0.0271 (  0.0%)   0.0271 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0156 (  0.0%)   0.0001 (  0.0%)   0.0157 (  0.0%)   0.0157 (  0.0%)  Function Alias Analysis Results
+   0.0130 (  0.0%)   0.0001 (  0.0%)   0.0131 (  0.0%)   0.0130 (  0.0%)  Memory Dependence Analysis
+   0.0110 (  0.0%)   0.0001 (  0.0%)   0.0110 (  0.0%)   0.0111 (  0.0%)  Phi Values Analysis
+   0.0022 (  0.0%)   0.0000 (  0.0%)   0.0022 (  0.0%)   0.0023 (  0.0%)  Post-Dominator Tree Construction
+  3837.8368 (100.0%)  26.8197 (100.0%)  3864.6565 (100.0%)  3883.5046 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                LLVM IR Parsing
+===-------------------------------------------------------------------------===
+  Total Execution Time: 1.6883 seconds (1.7882 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   1.5398 (100.0%)   0.1485 (100.0%)   1.6883 (100.0%)   1.7882 (100.0%)  Parse IR
+   1.5398 (100.0%)   0.1485 (100.0%)   1.6883 (100.0%)   1.7882 (100.0%)  Total
+

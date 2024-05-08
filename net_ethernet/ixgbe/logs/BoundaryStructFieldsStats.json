@@ -1,0 +1,282 @@
+{
+  "Struct": "mii_ioctl_data",
+  "No.Fields": 4,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "msix_entry",
+  "No.Fields": 2,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "ptp_clock_event",
+  "No.Fields": 3,
+  "No.KRDU fields": 1,
+  "No.classified fields": 0,
+  "No.unclassified fields": 1
+}
+{
+  "Struct": "list_head",
+  "No.Fields": 2,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "xdp_buff",
+  "No.Fields": 8,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "flow_block_offload",
+  "No.Fields": 11,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "page",
+  "No.Fields": 5,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "ptp_clock",
+  "No.Fields": 24,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "ethtool_ts_info",
+  "No.Fields": 7,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "_ddebug",
+  "No.Fields": 8,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "netdev_nested_priv",
+  "No.Fields": 2,
+  "No.KRDU fields": 1,
+  "No.classified fields": 0,
+  "No.unclassified fields": 1
+}
+{
+  "Struct": "callback_head",
+  "No.Fields": 2,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "raw_spinlock",
+  "No.Fields": 4,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "skb_shared_hwtstamps",
+  "No.Fields": 1,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "rtnl_link_stats64",
+  "No.Fields": 25,
+  "No.KRDU fields": 9,
+  "No.classified fields": 0,
+  "No.unclassified fields": 9
+}
+{
+  "Struct": "lock_class_key",
+  "No.Fields": 0,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "nlattr",
+  "No.Fields": 2,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "ndmsg",
+  "No.Fields": 7,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "xdp_frame",
+  "No.Fields": 8,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "mdio_if_info",
+  "No.Fields": 6,
+  "No.KRDU fields": 6,
+  "No.classified fields": 0,
+  "No.unclassified fields": 6
+}
+{
+  "Struct": "timer_list",
+  "No.Fields": 4,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "sk_buff",
+  "No.Fields": 25,
+  "No.KRDU fields": 2,
+  "No.classified fields": 0,
+  "No.unclassified fields": 2
+}
+{
+  "Struct": "file_operations",
+  "No.Fields": 34,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "net_device",
+  "No.Fields": 210,
+  "No.KRDU fields": 14,
+  "No.classified fields": 2,
+  "No.unclassified fields": 12,
+  "CONTROL_VAR": "2"
+}
+{
+  "Struct": "work_struct",
+  "No.Fields": 3,
+  "No.KRDU fields": 1,
+  "No.classified fields": 0,
+  "No.unclassified fields": 1
+}
+{
+  "Struct": "napi_struct",
+  "No.Fields": 16,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "device",
+  "No.Fields": 88,
+  "No.KRDU fields": 2,
+  "No.classified fields": 0,
+  "No.unclassified fields": 2
+}
+{
+  "Struct": "workqueue_struct",
+  "No.Fields": 21,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "static_key",
+  "No.Fields": 2,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "xdp_rxq_info",
+  "No.Fields": 6,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "cpumask",
+  "No.Fields": 1,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "dentry",
+  "No.Fields": 16,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "ptp_clock_info",
+  "No.Fields": 71,
+  "No.KRDU fields": 8,
+  "No.classified fields": 0,
+  "No.unclassified fields": 8
+}
+{
+  "Struct": "cyclecounter",
+  "No.Fields": 4,
+  "No.KRDU fields": 4,
+  "No.classified fields": 0,
+  "No.unclassified fields": 4
+}
+{
+  "Struct": "timecounter",
+  "No.Fields": 5,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "bpf_prog",
+  "No.Fields": 26,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "module",
+  "No.Fields": 48,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "pci_dev",
+  "No.Fields": 115,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Struct": "pci_driver",
+  "No.Fields": 17,
+  "No.KRDU fields": 0,
+  "No.classified fields": 0,
+  "No.unclassified fields": 0
+}
+{
+  "Shared Struct": 39,
+  "Shared Fields": 843,
+  "KRDU Fields": 48,
+  "Classified Fields": 2,
+  "Non-Classified Fields": 46,
+  "CONTROL_VAR": 2
+}

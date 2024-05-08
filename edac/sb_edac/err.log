@@ -1,0 +1,51 @@
+WARNING: You're attempting to print out a bitcode file.
+This is inadvisable as it may cause display problems. If
+you REALLY want to taste LLVM bitcode first-hand, you
+can force output with the `-f' option.
+
+Unable to open file!
+Start building PDG
+func size: 1377
+PDG Node size: 76245
+Shared Fields Classification:
+----------------------------
+Function Pointer Number: 1
+Data Corruption Function Pointer Number: 0
+Data Leakage Function Pointer Number: 0
+Data Pointer Number: 6
+Data Corruption Data Pointer Number: 0
+Data Leakage Data Pointer Number: 0
+----------------------------
+number of shared fields: 42
+Shared fields computation finished
+[CIV Analysis]: propagating taints
+[CIV Analysis]: classifying risky data using type
+[CIV Analysis]: classifying risky data for boundary params
+[CIV Analysis]: classifying risky data for drv callbacks
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 31.0200 seconds (31.0874 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+  21.7835 ( 74.6%)   1.7119 ( 94.3%)  23.4954 ( 75.7%)  23.5451 ( 75.7%)  Data Dependency Graph
+   6.2048 ( 21.2%)   0.0997 (  5.5%)   6.3045 ( 20.3%)   6.3201 ( 20.3%)  Program Dependency Graph
+   1.1590 (  4.0%)   0.0000 (  0.0%)   1.1590 (  3.7%)   1.1608 (  3.7%)  Shared Data Analysis
+   0.0363 (  0.1%)   0.0029 (  0.2%)   0.0392 (  0.1%)   0.0392 (  0.1%)  Module Verifier
+   0.0075 (  0.0%)   0.0001 (  0.0%)   0.0076 (  0.0%)   0.0078 (  0.0%)  Dominator Tree Construction
+   0.0065 (  0.0%)   0.0000 (  0.0%)   0.0065 (  0.0%)   0.0066 (  0.0%)  Risky Field Analysis
+   0.0029 (  0.0%)   0.0000 (  0.0%)   0.0030 (  0.0%)   0.0030 (  0.0%)  Basic Alias Analysis (stateless AA impl)
+   0.0019 (  0.0%)   0.0000 (  0.0%)   0.0019 (  0.0%)   0.0019 (  0.0%)  Function Alias Analysis Results
+   0.0016 (  0.0%)   0.0000 (  0.0%)   0.0016 (  0.0%)   0.0016 (  0.0%)  Memory Dependence Analysis
+   0.0013 (  0.0%)   0.0000 (  0.0%)   0.0014 (  0.0%)   0.0014 (  0.0%)  Phi Values Analysis
+  29.2053 (100.0%)   1.8147 (100.0%)  31.0200 (100.0%)  31.0874 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                LLVM IR Parsing
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.1602 seconds (0.1604 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.1396 (100.0%)   0.0206 (100.0%)   0.1602 (100.0%)   0.1604 (100.0%)  Parse IR
+   0.1396 (100.0%)   0.0206 (100.0%)   0.1602 (100.0%)   0.1604 (100.0%)  Total
+
