@@ -1,0 +1,16 @@
+ixgbe_driver_name
+debug
+allow_unsupported_sfp
+ixgbe_wq
+ixgbe_driver
+ixgbe_info_tbl
+ixgbe_default_device_descr
+ixgbe_ipv4_fields
+ixgbe_ipv4_jumps
+ixgbe_tcp_fields
+ixgbe_udp_fields
+mac_ops_x550em_a
+ixgbe_dbg_root
+ixgbe_dbg_netdev_ops_buf
+ixgbe_dbg_reg_ops_buf
+__this_module

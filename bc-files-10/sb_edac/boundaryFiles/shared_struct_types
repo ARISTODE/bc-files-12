@@ -1,0 +1,11 @@
+device
+dimm_info
+edac_mc_layer
+kobject
+list_head
+mce
+mem_ctl_info
+notifier_block
+pci_bus
+pci_dev
+x86_cpu_id
